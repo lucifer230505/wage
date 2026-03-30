@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Calculator - WagePro</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="calculator">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">💼 WagePro</div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="calculator.html" class="active">Calculator</a>
+            <a href="history.html">History</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="theme-toggle" id="themeToggle">🌙</div>
+        </nav>
+         
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Wage Calculator</h1>
+        <p>Calculate your earnings with advanced options</p>
+    </section>
+
+
+    <!-- CALCULATOR SECTION -->
+    <section class="calculator-container">
+
+        <div class="calculator-card">
+
+            <!-- INPUTS -->
+            <div class="form-group">
+                <label>Hourly Rate</label>
+                <input type="number" id="rate" placeholder="Enter hourly rate">
+            </div>
+
+            <div class="form-group">
+                <label>Hours Worked</label>
+                <input type="number" id="hours" placeholder="Enter hours worked">
+            </div>
+
+            <!-- ADVANCED OPTIONS -->
+            <div class="advanced-section">
+
+                <h3>Advanced Options</h3>
+
+                <div class="form-group">
+                    <label>Overtime Hours</label>
+                    <input type="number" id="overtimeHours" placeholder="Optional">
+                </div>
+
+                <div class="form-group">
+                    <label>Overtime Rate Multiplier</label>
+                    <input type="number" id="overtimeRate" placeholder="e.g 1.5">
+                </div>
+
+                <div class="form-group">
+                    <label>Tax (%)</label>
+                    <input type="number" id="tax" placeholder="Optional">
+                </div>
+
+                <div class="form-group">
+                    <label>Bonus</label>
+                    <input type="number" id="bonus" placeholder="Optional">
+                </div>
+
+            </div>
+
+            <!-- BUTTON -->
+            <button class="btn primary large" id="calculateBtn">
+                Calculate Wage
+            </button>
+
+        </div>
+
+
+        <!-- RESULTS -->
+        <div class="results-card">
+
+            <h2>Results</h2>
+
+            <div class="result-item">
+                <span>Gross Pay:</span>
+                <strong id="grossPay">₦0</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Tax Deduction:</span>
+                <strong id="taxAmount">₦0</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Net Pay:</span>
+                <strong id="netPay">₦0</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Weekly Estimate:</span>
+                <strong id="weeklyPay">₦0</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Monthly Estimate:</span>
+                <strong id="monthlyPay">₦0</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SAVE BUTTON -->
+    <section class="save-section">
+        <button class="btn secondary" id="saveBtn">
+            Save Calculation
+        </button>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 WagePro. Smart income tracking.</p>
+    </footer>
+
+
+    <!-- GLOBAL JS -->
+    <script src="app.js"></script>
+
+</body>
+</html>

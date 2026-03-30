@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - WagePro</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="history">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">💼 WagePro</div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="history.html" class="active">History</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="theme-toggle" id="themeToggle">🌙</div>
+        </nav>
+         
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Calculation History</h1>
+        <p>View and manage your saved wage records</p>
+    </section>
+
+
+    <!-- HISTORY SECTION -->
+    <section class="history-container">
+
+        <!-- ACTION BUTTONS -->
+        <div class="history-actions">
+            <button class="btn secondary" id="clearHistoryBtn">
+                Clear All History
+            </button>
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div class="empty-state" id="emptyState">
+            <h2>No history yet</h2>
+            <p>Your saved wage calculations will appear here.</p>
+            <a href="calculator.html" class="btn primary">
+                Go to Calculator
+            </a>
+        </div>
+
+        <!-- HISTORY LIST -->
+        <div class="history-list" id="historyList">
+
+            <!-- Example Item (JS will generate real ones later) -->
+            <div class="history-item">
+                <div class="history-info">
+                    <p><strong>Rate:</strong> ₦500/hr</p>
+                    <p><strong>Hours:</strong> 8 hrs</p>
+                    <p><strong>Net Pay:</strong> ₦4,000</p>
+                </div>
+
+                <div class="history-meta">
+                    <span>Date: 2026-03-26</span>
+                    <button class="btn small delete-btn">Delete</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 WagePro. Track your progress.</p>
+    </footer>
+
+
+    <!-- GLOBAL JS -->
+    <script src="app.js"></script>
+
+</body>
+</html>
